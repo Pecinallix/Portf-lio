@@ -1,0 +1,19 @@
+.menu-home{
+display: flex;
+justify-content: space-between;
+}
+.menu-home img{
+width: 100px;
+}
+.links-home a li{
+  display: inline-flex;
+  margin: 40px 55px;
+  font-size: 1.3rem;
+}
+.text-center-home {
+text-align: center;
+margin: 200px auto;
+}
+.text-center-home h1 {
+  font-size: 10rem;
+}
