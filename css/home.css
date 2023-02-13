@@ -1,59 +1,82 @@
 .container-home{
 background: rgb(60,60,60);
 background: radial-gradient(circle, rgba(60,60,60,1) 0%, rgba(34,34,34,1) 50%);
-height:   100vh;
+min-height: 100vh;
 }
-.container-home, .links-social-media{
-align-items: end;
+
+.logo-home{
+  max-width: 60px;
+  margin: 15px 20px;
+}
+.logo-home:hover{
+  transform: scale(1.17);
+  transition: all 0.3s;
+  background-color: #333;
+  box-shadow: 0 0 10px #333, 0 0 10px 13px #333;
 }
 .menu-home{
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
 }
-.menu-home a{
-  display: inline-flex;
-  margin: 30px 55px;
-}
 
-.menu-home a:hover{
+.links-menu-home{
+  display: inline-flex;
+  margin-top: 30px;
+  margin-right: 35px;
+} 
+.links-menu-home:hover{
   background-color: #333;
   border-radius: 5px;
   box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
 }
 
-.logo-home{
-  width: 100px;
-
-}
 .text-center-home {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
-
+ 
 }
 .text-center-home h1 {
-  font-size: 10rem;
+  font-size: 9.5rem;
+  margin-right: 20px;
+}
+.text-center-home h1::before{
+content: "Olá, me chamo";
+font-family: 'Roboto Flex', sans-serif;
+font-size: 1.3rem;
+display: flex;
+justify-content: center;
+margin-right: 500px;
 }
 .text-center-home p{
   font-size: 1.1rem;
+  line-height: 1.5;
+  font-family: 'Roboto Flex', sans-serif;
   margin: auto;
-  max-width: 500px;
+  max-width: 550px;
 }
-.links-social-media{
+.footer-home{
   display: flex;
   justify-content: space-between;
-  margin: 10px 10px;
+  margin: 0 10px;
   align-items: center;
 }
-.links-social-media ul li {
- margin: 5px 10px;
+.links-social-media ul li, .links-skills-wiki li {
+ margin: 5px;
 }
 .links-social-media li a img:hover{
+  transform: scale(1.07);
+  transition: all 0.3s;
   background-color: #333;
   border-radius: 20px;
+  box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
+}
+.links-skills-wiki li a img:hover{
+  transform: scale(1.07);
+  transition: all 0.3s;
+  background-color: #333;
   box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
 }
 .name-vertical{
