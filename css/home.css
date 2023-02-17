@@ -63,24 +63,20 @@ margin-right: 500px;
   margin: 0 10px;
   align-items: center;
 }
-.links-social-media ul li, .links-skills-wiki li {
+.links-social-media-home ul li, .links-skills-wiki-home li {
  margin: 5px;
 }
-.links-social-media li a img:hover{
+.links-social-media-home li a img:hover{
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;
   border-radius: 20px;
   box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
 }
-.links-skills-wiki li a img:hover{
+.links-skills-wiki-home li a img:hover{
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;
-  box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
-}
-.name-vertical{
-  display: flex;
-  justify-content: end;
-  margin-right: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
 }

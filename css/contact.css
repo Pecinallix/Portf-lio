@@ -1,0 +1,118 @@
+.container-contact {
+  background: rgb(60, 60, 60);
+  background: radial-gradient(
+    circle,
+    rgba(60, 60, 60, 1) 0%,
+    rgba(34, 34, 34, 1) 50%
+  );
+  min-height: 100vh;
+}
+
+.logo-contact {
+  max-width: 60px;
+  margin: 15px 20px;
+}
+
+.logo-contact:hover {
+  transform: scale(1.17);
+  transition: all 0.3s;
+  background-color: #333;
+  box-shadow: 0 0 10px #333, 0 0 10px 13px #333;
+}
+
+.menu-contact {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-menu-contact {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+.links-menu-contact:hover {
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
+}
+
+.links-social-media-contact ul li,
+.links-skills-wiki li {
+  margin: 5px;
+}
+
+.links-social-media-contact li a img:hover {
+  transform: scale(1.07);
+  transition: all 0.3s;
+  background-color: #333;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
+}
+
+.links-skills-wiki-contact li a img:hover {
+  transform: scale(1.07);
+  transition: all 0.3s;
+  background-color: #333;
+  box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
+}
+
+.container-form-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  align-items: end;
+}
+
+.container-contact-form-text {
+  display: flex;
+}
+
+.contact-text {
+  max-width: 550px;
+  margin-right: 30px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.contact-text h2 {
+  margin-top: 30px;
+}
+
+.form-contact {
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30vw;
+  height: 55vh;
+}
+
+.form-contact h1 {
+  text-align: center;
+}
+
+.form-contact input {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border-bottom: 1px solid #515354;
+  width: 450px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  margin: 50px 0;
+}
+
+.form-contact button {
+  box-shadow: 5px 5px 5px -2px #515354;
+  background-color: transparent;
+  border: 1px solid #595859;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  margin: 15px 35%;
+}
