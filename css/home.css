@@ -1,31 +1,35 @@
-.container-home{
-background: rgb(60,60,60);
-background: radial-gradient(circle, rgba(60,60,60,1) 0%, rgba(34,34,34,1) 50%);
-min-height: 100vh;
+.container-home {
+  background: rgb(60, 60, 60);
+  background: radial-gradient(
+    circle,
+    rgba(60, 60, 60, 1) 0%,
+    rgba(34, 34, 34, 1) 50%
+  );
+  min-height: 100vh;
 }
 
-.logo-home{
+.logo-home {
   max-width: 60px;
   margin: 15px 20px;
 }
-.logo-home:hover{
+.logo-home:hover {
   transform: scale(1.17);
   transition: all 0.3s;
   background-color: #333;
   box-shadow: 0 0 10px #333, 0 0 10px 13px #333;
 }
-.menu-home{
+.menu-home {
   font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
 }
 
-.links-menu-home{
+.links-menu-home {
   display: inline-flex;
   margin-top: 30px;
   margin-right: 35px;
-} 
-.links-menu-home:hover{
+}
+.links-menu-home:hover {
   background-color: #333;
   border-radius: 5px;
   box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
@@ -36,44 +40,49 @@ min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
- 
+  margin-top: 7%;
 }
 .text-center-home h1 {
   font-size: 9.5rem;
   margin-right: 20px;
 }
-.text-center-home h1::before{
-content: "Olá, me chamo";
-font-family: 'Roboto Flex', sans-serif;
-font-size: 1.3rem;
-display: flex;
-justify-content: center;
-margin-right: 500px;
+.text-center-home h1::before {
+  content: 'Olá, me chamo';
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 500px;
 }
-.text-center-home p{
+.text-center-home p {
   font-size: 1.1rem;
   line-height: 1.5;
   font-family: 'Roboto Flex', sans-serif;
   margin: auto;
   max-width: 550px;
 }
-.footer-home{
+.footer-home {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 6% 10px 0;
   align-items: center;
 }
-.links-social-media-home ul li, .links-skills-wiki-home li {
- margin: 5px;
+.links-social-media-home li,
+.links-skills-wiki-home li {
+  margin: 5px;
 }
-.links-social-media-home li a img:hover{
+.links-skills-wiki-home img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.links-social-media-home img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;
   border-radius: 20px;
   box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
 }
-.links-skills-wiki-home li a img:hover{
+.links-skills-wiki-home img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;

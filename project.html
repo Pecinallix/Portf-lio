@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/global/style.css">
+  <link rel="stylesheet" href="/global/style.css">
   <title>Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,26 @@
           <a class="links-menu-project" href="/contact.html">Contato</a>
         </div>
       </div>
-      <div class="text-center-project">
-        <h1>Projetos</h1>
-        <p>e sou um desenvolvedor front-end iniciante,</br>atualmente conheço as linguagens HTML, CSS, JavaScript.</br>Acredito que a chave para o sucesso como programador front-end é estar sempre atualizado sobre as tendências e tecnologias mais recentes, além de ter um olhar atento para a usabilidade e a experiência do usuário. Estou comprometido a continuar aperfeiçoando minhas habilidades e buscando conhecimento na área.</p>
+
+      <div class="modal-center-project">
+        <div class="container">
+          <button class="arrow-left control" aria-label="Previous image">◀</button>
+          <button class="arrow-right control" aria-label="Next Image">▶</button>
+          <div class="gallery-wrapper">
+            <div class="gallery">
+              <!--       <div class="item current-item cyan"></div>
+              <div class="item deeppink"></div>
+              <div class="item turquoise"></div>
+              <div class="item darkblue"></div>
+              <div class="item purple"></div> -->
+              <img src="https://source.unsplash.com/random/500x500/?beach" alt="Beach Image" class="item current-item">
+              <img src="https://source.unsplash.com/random/500x500/?animal" alt="Animal Image" class="item current-item">
+              <img src="https://source.unsplash.com/random/500x500/?street" alt="Street Image" class="item current-item">
+              <img src="https://source.unsplash.com/random/500x500/?zoo" alt="Zoo Image" class="item current-item">
+              <img src="https://source.unsplash.com/random/500x500/?model" alt="Model Image" class="item current-item">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer-project">
         <div class="links-social-media-project">
@@ -37,18 +54,19 @@
             <li><a href="https://wa.me/5522992679550"><img src="/img/whatsapp.svg" alt=""></a></li>
           </ul>
         </div>
+
         <div class="links-skills-wiki-project">
           <ul>
-            <li><a href="https://pt.wikipedia.org/wiki/HTML5"><img src="/img/html.png" alt="" style="max-width: 66px;max-height: 66px;"></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/CSS3"><img src="/img/css.png" alt="" style="max-width: 66px;max-height: 66px;"></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/JavaScript"><img src="/img/js.png" alt="" style="max-width: 66px;max-height: 66px;"></a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/HTML5"><img src="/img/html.png" alt=""></a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/CSS3"><img src="/img/css.png" alt=""></a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/JavaScript"><img src="/img/js.png" alt=""></a></li>
           </ul>
         </div>
       </div>
 
-    </div>
   </main>
-
+  <script src="/javascript/project.js"></script>
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 </body>
 
 </html>

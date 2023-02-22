@@ -38,12 +38,12 @@
   box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
 }
 
-.links-social-media-contact ul li,
-.links-skills-wiki li {
+.links-social-media-contact li,
+.links-skills-wiki-contact li {
   margin: 5px;
 }
 
-.links-social-media-contact li a img:hover {
+.links-social-media-contact img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;
@@ -51,7 +51,11 @@
   box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
 }
 
-.links-skills-wiki-contact li a img:hover {
+.links-skills-wiki-contact img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.links-skills-wiki-contact img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
   background-color: #333;
@@ -60,8 +64,8 @@
 
 .container-form-contact {
   display: flex;
-  justify-content: space-between;
-  margin: 0 10px;
+  justify-content: center;
+  margin: 3% 10px 0;
   align-items: end;
 }
 
@@ -102,7 +106,8 @@
   background-color: transparent;
   color: white;
   font-size: 1.2rem;
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 .form-contact button {
@@ -114,5 +119,15 @@
   color: #ffffff;
   font-size: 1.1rem;
   padding: 15px 30px;
-  margin: 15px 35%;
+  margin: 18% 35% 0px 35%;
+}
+.form-contact button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  box-shadow: 10px 10px 5px -2px #515354;
+}
+.container-footer-contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
 }
