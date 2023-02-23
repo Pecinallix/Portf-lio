@@ -63,7 +63,7 @@
 .footer-project {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 0px 10px 0;
   align-items: center;
 }
 .links-social-media-project li,
@@ -89,15 +89,14 @@
   box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
 }
 /* ///////////////////// */
-
-.container {
+.container-carrosel {
   position: relative;
   padding: 15px;
-  max-width: 640px;
+  max-width: 60vw;
   margin: 0 auto;
 }
 
-.gallery-wrapper {
+.gallery-container {
   overflow-x: auto;
 }
 
@@ -105,18 +104,20 @@
 .arrow-right {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   right: auto;
-  bottom: 0;
-  font-size: 20px;
+  font-size: 1.8rem;
   line-height: 250px;
   width: 40px;
-  color: #fff;
+  color: #ffffff;
   transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, black 200%);
+  background: linear-gradient(to left, transparent 0%, #333 200%);
   opacity: 0.1;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .arrow-left:hover,
@@ -128,57 +129,52 @@
   right: 0;
   left: auto;
   text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
+  background: linear-gradient(to right, transparent 0%, #333 200%);
 }
 
 .gallery {
   display: flex;
   flex-flow: row nowrap;
-  gap: 15px;
+  gap: 10px;
 }
 
 .item {
-  width: 250px;
-  height: 250px;
+  width: 750px;
+  height: 550px;
+  border-radius: 10px;
   flex-shrink: 0;
   transition: all 600ms ease-in-out;
-  opacity: 0.5;
+  filter: blur(5px);
+  cursor: default;
 }
 
 .current-item {
-  opacity: 1;
+  filter: blur(0px);
+  cursor: pointer;
 }
 
-/* This is from w3schools */
-/* 
-https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-/* Hide scrollbar for Chrome, Safari and Opera */
-.gallery-wrapper::-webkit-scrollbar {
+.gallery-container::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.gallery-wrapper {
+.gallery-container {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-.cyan {
-  background: cyan;
+.container-buttom-projects a {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #595859;
+  background-color: #333;
+  box-shadow: 5px 5px 5px -2px #595859;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  margin: 0 45%;
 }
-
-.deeppink {
-  background: deeppink;
-}
-
-.turquoise {
-  background: turquoise;
-}
-
-.darkblue {
-  background: darkblue;
-}
-
-.purple {
-  background: purple;
+.container-buttom-projects a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
