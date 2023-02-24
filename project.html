@@ -56,14 +56,37 @@
 
         <div class="links-skills-wiki-project">
           <ul>
-            <li><a href="https://pt.wikipedia.org/wiki/HTML5"><img src="/img/html.png" alt=""></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/CSS3"><img src="/img/css.png" alt=""></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/JavaScript"><img src="/img/js.png" alt=""></a></li>
+            <li><img data-modal="html-img" src="/img/html.png" alt=""></li>
+            <li><img data-modal="css-img" src="/img/css.png" alt=""></li>
+            <li><img data-modal="javascript-img" src="/img/js.png" alt=""></li>
           </ul>
         </div>
       </div>
 
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <button data-modal="fechar" class="fechar">X</button>
+          <div data-modal="html-text">
+            <h1>HTML</h1>
+            <p>HTML é a linguagem de marcação usada para criar a estrutura de um site ou aplicação web. Você usará HTML para criar a estrutura básica da sua página, incluindo cabeçalhos, parágrafos, listas, imagens, formulários e muito mais. HTML é relativamente fácil de aprender, e é uma ótima linguagem para começar a aprender a criar páginas web.</p>
+          </div>
+
+          <div data-modal="css-text">
+            <h1>CSS</h1>
+            <p>CSS é a linguagem de estilo usada para adicionar estilos visuais ao seu site ou aplicação web. Você usará CSS para definir a aparência visual de seus elementos HTML, como cores, fontes, tamanhos, espaçamento, posicionamento e muito mais. CSS pode ser um pouco mais desafiador do que HTML, mas é uma habilidade essencial para qualquer desenvolvedor web.</p>
+          </div>
+
+          <div data-modal="javascript-text">
+            <h1>JavaScript</h1>
+            <p>JavaScript é uma linguagem de programação que permite criar interatividade e dinamismo em seu site ou aplicação web. Você usará JavaScript para adicionar recursos interativos, como botões, animações, formulários dinâmicos, efeitos visuais e muito mais. JavaScript é uma linguagem poderosa e versátil, mas também pode ser um pouco mais desafiadora do que HTML e CSS.</p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
   </main>
+  <script src="/javascript/modal.js"></script>
   <script src="/javascript/project.js"></script>
   <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 </body>
