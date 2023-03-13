@@ -29,17 +29,21 @@
       <div class="container-form-contact">
         <div class="container-contact-form-text">
           <div class="contact-text">
-            <h1>Experiência</h1>
-            <p>Em abril de 2022 comecei a estudar análise e desenvolvimento de sistemas. Então, tive a oportunidade de adquirir os cursos da Origamid e venho estudando desde então. Estou cada vez mais apaixonado pela área de desenvolvimento e tenho feito alguns projetos, tanto dentro quanto fora do curso, para praticar e fixar bem as linguagens HTML, CSS e JavaScript.</br>Tenho muita gratidão por todas as oportunidades que tenho tido em minha jornada de aprendizado. Sigo comprometido em me aperfeiçoar e adquirir novas habilidades para me tornar um desenvolvedor cada vez mais completo e capaz de contribuir com soluções inovadoras e criativas para o mundo da tecnologia."</p>
+            <h1 class="font-rf-700-2">Experiência</h1>
+            <p class="font-rf-400-2">Em abril de 2022 comecei a estudar análise e desenvolvimento de sistemas. Então, tive a oportunidade de adquirir os cursos da Origamid e venho estudando desde então. Estou cada vez mais apaixonado pela área de desenvolvimento e tenho feito alguns projetos, tanto dentro quanto fora do curso, para praticar e fixar bem as linguagens HTML, CSS e JavaScript.
+              </br>Tenho muita gratidão por todas as oportunidades que tenho tido em minha jornada de aprendizado. Sigo comprometido em me aperfeiçoar e adquirir novas habilidades para me tornar um desenvolvedor cada vez mais completo e capaz de contribuir com soluções inovadoras e criativas para o mundo da tecnologia."</p>
             <h2>Residente</h2>
-            <p>🗺️ - RJ - Araruama</p>
+            <p class="font-rf-400">🗺️ - RJ - Araruama</p>
             <h2>Telefone</h2>
-            <p>📱 - (22) 99267-9550</p>
+            <p class="font-rf-400">📱 - (22)99267-9550</p>
             <h2>E-mail</h2>
-            <p>📧 - icaropecinalli@hotmail.com</p>
+            <p class="font-rf-400">📧 - icaropecinalli@hotmail.com</p>
+
+            <a href="mailto:icaropecinalli@hotmail.com"><button class="button-text-contact">Enviar</button></a>
           </div>
+
           <div class="form-contact">
-            <h1>Contato Form</h1>
+            <h1 class="font-rf-700-2">Entre em Contato</h1>
             <form action="https://api.staticforms.xyz/submit" method="post">
 
               <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off">
@@ -57,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="container-footer-contact">
+      <div>
         <div class="links-social-media-contact">
           <ul>
             <li><a href="https://www.linkedin.com/in/icaropecinalli/"><img src="/img/linkedin.svg" alt=""></a></li>
@@ -67,14 +71,37 @@
         </div>
         <div class="links-skills-wiki-contact">
           <ul>
-            <li><a href="https://pt.wikipedia.org/wiki/HTML5"><img src="/img/html.png" alt=""></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/CSS3"><img src="/img/css.png" alt=""></a></li>
-            <li><a href="https://pt.wikipedia.org/wiki/JavaScript"><img src="/img/js.png" alt=""></a></li>
+            <li><img data-modal="html-img" src="/img/html.png" alt=""></li>
+            <li><img data-modal="css-img" src="/img/css.png" alt=""></li>
+            <li><img data-modal="javascript-img" src="/img/js.png" alt=""></li>
           </ul>
         </div>
       </div>
+
+      <section class="modal-container" data-modal="container">
+        <div class="modal">
+          <button data-modal="fechar" class="fechar">X</button>
+          <div data-modal="html-text">
+            <h1>HTML</h1>
+            <p class="font-rf-500">HTML é a linguagem de marcação usada para criar a estrutura de um site ou aplicação web. Você usará HTML para criar a estrutura básica da sua página, incluindo cabeçalhos, parágrafos, listas, imagens, formulários e muito mais. HTML é relativamente fácil de aprender, e é uma ótima linguagem para começar a aprender a criar páginas web.</p>
+          </div>
+
+          <div data-modal="css-text">
+            <h1>CSS</h1>
+            <p class="font-rf-500">CSS é a linguagem de estilo usada para adicionar estilos visuais ao seu site ou aplicação web. Você usará CSS para definir a aparência visual de seus elementos HTML, como cores, fontes, tamanhos, espaçamento, posicionamento e muito mais. CSS pode ser um pouco mais desafiador do que HTML, mas é uma habilidade essencial para qualquer desenvolvedor web.</p>
+          </div>
+
+          <div data-modal="javascript-text">
+            <h1>JavaScript</h1>
+            <p class="font-rf-500">JavaScript é uma linguagem de programação que permite criar interatividade e dinamismo em seu site ou aplicação web. Você usará JavaScript para adicionar recursos interativos, como botões, animações, formulários dinâmicos, efeitos visuais e muito mais. JavaScript é uma linguagem poderosa e versátil, mas também pode ser um pouco mais desafiadora do que HTML e CSS.</p>
+          </div>
+
+        </div>
+      </section>
+    </div>
     </div>
   </main>
+  <script src="/javascript/modal.js"></script>
 
 </body>
 

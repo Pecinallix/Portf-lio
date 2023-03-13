@@ -21,7 +21,7 @@
 }
 
 .menu-contact {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
 }
@@ -30,19 +30,35 @@
   display: inline-flex;
   margin-top: 30px;
   margin-right: 35px;
+  border-radius: 5px;
 }
 
 .links-menu-contact:hover {
   background-color: #333;
-  border-radius: 5px;
   box-shadow: 0 0 10px #333, 0 0 10px 4px #333;
+  scale: 1.2;
+  transition: 0.3s;
 }
 
+.links-social-media-contact {
+  position: absolute;
+  left: 5px;
+  bottom: 10px;
+}
+.links-skills-wiki-contact {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
 .links-social-media-contact li,
 .links-skills-wiki-contact li {
   margin: 5px;
 }
-
+.links-skills-wiki-contact img {
+  max-width: 60px;
+  max-height: 60px;
+  cursor: pointer;
+}
 .links-social-media-contact img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
@@ -51,10 +67,6 @@
   box-shadow: 0 0 10px #333, 0 0 10px 1px #333;
 }
 
-.links-skills-wiki-contact img {
-  max-width: 50px;
-  max-height: 50px;
-}
 .links-skills-wiki-contact img:hover {
   transform: scale(1.07);
   transition: all 0.3s;
@@ -65,25 +77,27 @@
 .container-form-contact {
   display: flex;
   justify-content: center;
-  margin: 3% 10px 0;
+  margin: 0 10px;
   align-items: end;
 }
 
 .container-contact-form-text {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contact-text {
   max-width: 550px;
   margin-right: 30px;
   text-align: center;
-  line-height: 1.6;
 }
 
 .contact-text h2 {
   margin-top: 30px;
 }
-
+.contact-text h1 {
+  margin-bottom: 20px;
+}
 .form-contact {
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -102,7 +116,7 @@
   flex-direction: column;
   outline: none;
   border-bottom: 1px solid #515354;
-  width: 450px;
+  width: 95%;
   background-color: transparent;
   color: white;
   font-size: 1.2rem;
@@ -119,15 +133,63 @@
   color: #ffffff;
   font-size: 1.1rem;
   padding: 15px 30px;
-  margin: 18% 35% 0px 35%;
+  margin: 15% 40%;
 }
 .form-contact button:hover {
   transform: scale(1.1);
   transition: all 0.3s;
   box-shadow: 10px 10px 5px -2px #515354;
 }
-.container-footer-contact {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 10px;
+.button-text-contact {
+  display: none;
+}
+.button-text-contact:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  box-shadow: 10px 10px 5px -2px #515354;
+}
+@media (max-width: 1000px) {
+  .form-contact input {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .contact-text {
+    max-width: 400px;
+  }
+}
+@media (max-width: 850px) {
+  .form-contact {
+    display: none;
+  }
+  .button-text-contact {
+    display: inline;
+    box-shadow: 5px 5px 5px -2px #515354;
+    background-color: transparent;
+    border: 1px solid #595859;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    margin-top: 20px;
+  }
+  .contact-text {
+    max-width: 350px;
+  }
+}
+@media (max-width: 700px) {
+  .links-skills-wiki-contact img,
+  .links-social-media-contact img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu-contact {
+    font-size: 1.2rem;
+  }
+  .logo-contact {
+    max-width: 50px;
+  }
 }
