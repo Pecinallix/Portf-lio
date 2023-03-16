@@ -2,5 +2,5 @@
 @import '../css/contact.css';
 @import '../css/project.css';
 @import '../css/modal.css';
-@import './global/resetgeral.css';
-@import './global/tipografia.css';
+@import '../global/resetgeral.css';
+@import '../global/tipografia.css';
