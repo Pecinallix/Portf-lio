@@ -117,7 +117,7 @@
 @media (max-width: 600px) {
   .text-center-home h1::before {
     font-size: 0.8rem;
-    margin-right: 300px;
+    margin-right: 250px;
   }
   .text-center-home {
     margin-top: 5%;
@@ -131,7 +131,7 @@
     max-width: 50px;
   }
   .text-center-home {
-    margin-top: 10%;
+    margin-top: 8%;
   }
   .links-skills-wiki-home img,
   .links-social-media-home img {
