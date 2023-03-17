@@ -120,7 +120,7 @@
     margin-right: 300px;
   }
   .text-center-home {
-    margin-top: 20%;
+    margin-top: 5%;
   }
 }
 @media (max-width: 450px) {
@@ -131,6 +131,11 @@
     max-width: 50px;
   }
   .text-center-home {
-    margin-top: 25%;
+    margin-top: 10%;
+  }
+  .links-skills-wiki-home img,
+  .links-social-media-home img {
+    max-width: 35px;
+    max-height: 35px;
   }
 }

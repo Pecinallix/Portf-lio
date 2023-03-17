@@ -42,7 +42,7 @@
     font: 400 0.9rem/1.3 'Roboto Flex', san-serif;
   }
   .font-rf-500 {
-    font: 500 0.9rem/1.5 'Roboto Flex', san-serif;
+    font: 500 1rem/1.5 'Roboto Flex', san-serif;
   }
   .font-rf-700-1 {
     font: 700 0.9rem/1 'Roboto', san-serif;
@@ -63,5 +63,10 @@
   }
   .font-rf-700-9 {
     font: 700 5rem/1 'Roboto', san-serif;
+  }
+}
+@media (max-width: 450px) {
+  .font-rf-400-2 {
+    font: 400 0.8rem/1.3 'Roboto Flex', san-serif;
   }
 }

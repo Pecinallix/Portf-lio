@@ -110,7 +110,7 @@
 .container-carrossel {
   position: relative;
   padding: 15px;
-  max-width: 60vw;
+  max-width: 80vw;
   margin: auto;
 }
 
@@ -199,9 +199,6 @@
 }
 
 @media (max-width: 1330px) {
-  .container-carrossel {
-    max-width: 50vw;
-  }
   .item {
     width: 650px;
     height: 450px;
@@ -245,16 +242,25 @@
     width: 400px;
     height: 300px;
   }
-  .container-carrossel {
-    margin-top: 15%;
-  }
 }
 
 @media (max-width: 450px) {
+  .item {
+    width: 400px;
+    height: 300px;
+  }
   .menu-project {
     font-size: 1.2rem;
   }
   .logo-project {
     max-width: 50px;
+  }
+  .container-buttom-project a {
+    margin: 0 32%;
+  }
+  .links-skills-wiki-project img,
+  .links-social-media-project img {
+    max-width: 35px;
+    max-height: 35px;
   }
 }

@@ -192,4 +192,17 @@
   .logo-contact {
     max-width: 50px;
   }
+  .links-skills-wiki-contact img,
+  .links-social-media-contact img {
+    max-width: 35px;
+    max-height: 35px;
+  }
+  .button-text-contact {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .contact-text h2 {
+    margin-top: 10px;
+  }
 }
